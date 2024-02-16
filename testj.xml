@@ -1,0 +1,57 @@
+<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="16.861730000019072">
+<testsuite name="example.spec.ts" timestamp="2023-05-20T00:01:14.103Z" hostname="chromium" tests="2" failures="1" skipped="0" time="16.568" errors="0">
+<testcase name="Navigation validation › has title" classname="example.spec.ts" time="3.283">
+</testcase>
+<testcase name="Navigation validation › get started link" classname="example.spec.ts" time="13.285">
+<failure message="example.spec.ts:15:7 get started link" type="FAILURE">
+<![CDATA[  [chromium] › example.spec.ts:15:7 › Navigation validation › get started link ─────────────────────
+
+    Error: Timed out 10000ms waiting for expect(received).toHaveURL(expected)
+
+    Expected pattern: /.*intjro/
+    Received string:  "https://playwright.dev/docs/intro"
+    Call log:
+      - expect.toHaveURL with timeout 10000ms
+      - waiting for locator(':root')
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-rh="…>…</html>
+      -   unexpected value "https://playwright.dev/docs/intro"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-rh="…>…</html>
+      -   unexpected value "https://playwright.dev/docs/intro"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-rh="…>…</html>
+      -   unexpected value "https://playwright.dev/docs/intro"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-rh="…>…</html>
+      -   unexpected value "https://playwright.dev/docs/intro"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-rh="…>…</html>
+      -   unexpected value "https://playwright.dev/docs/intro"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-rh="…>…</html>
+      -   unexpected value "https://playwright.dev/docs/intro"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-rh="…>…</html>
+      -   unexpected value "https://playwright.dev/docs/intro"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-rh="…>…</html>
+      -   unexpected value "https://playwright.dev/docs/intro"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-rh="…>…</html>
+      -   unexpected value "https://playwright.dev/docs/intro"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-rh="…>…</html>
+      -   unexpected value "https://playwright.dev/docs/intro"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-rh="…>…</html>
+      -   unexpected value "https://playwright.dev/docs/intro"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-rh="…>…</html>
+      -   unexpected value "https://playwright.dev/docs/intro"
+      -   locator resolved to <html lang="en" dir="ltr" data-theme="light" data-rh="…>…</html>
+      -   unexpected value "https://playwright.dev/docs/intro"
+
+
+      24 |
+      25 |     // Expects the URL to contain intro.
+    > 26 |     await expect(page).toHaveURL(/.*intjro/);
+         |                        ^
+      27 |
+      28 |     //const path = testInfo.outputPath('tmp_screenshot.png');
+      29 |     //testInfo.attachments.push({ name: 'failscreenshot.png', path, contentType: 'image/png' });
+
+        at c:\Users\rossana.may\OneDrive - NearShore Technology\c\Automation\POC\Playwright\pwpom\tests\example.spec.ts:26:24
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

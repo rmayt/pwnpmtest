@@ -1,0 +1,32 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="14.864923000097274">
+<testsuite name="mouseover.spec.ts" timestamp="2023-06-12T23:11:34.457Z" hostname="chromium" tests="1" failures="1" skipped="0" time="8.121" errors="0">
+<testcase name="test" classname="mouseover.spec.ts" time="8.121">
+<properties>
+<property name="testrun_evidence">
+</property>
+</properties>
+<failure message="mouseover.spec.ts:3:5 test" type="FAILURE">
+<![CDATA[  [chromium] › mouseover.spec.ts:3:5 › test ────────────────────────────────────────────────────────
+
+    Error: locator.hover: Error: strict mode violation: getByText(' Tutorials ') resolved to 2 elements:
+        1) <a title="" target="" class="we-mega-menu-li" href=…>↵      Tutorials    </a> aka locator('#block-mainnavigation').getByRole('link', { name: 'Tutorials' })
+        2) <a href="https://www.programsbuzz.com">Tutorials</a> aka getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'Tutorials' })
+
+    =========================== logs ===========================
+    waiting for getByText(' Tutorials ')
+    ============================================================
+
+      3 | test('test', async ({ page }) => {
+      4 |     await page.goto('https://www.programsbuzz.com/data-science-tutorial');
+    > 5 |     await page.getByText(' Tutorials ').hover();
+        |                                         ^
+      6 |     //await page.locator('#green').hover();
+      7 |
+      8 |     await page.getByRole('link', { name: 'click here to clear' }).click();
+
+        at C:\Users\rossana.may\OneDrive - NearShore Technology\c\Automation\POC\Playwright\pwpom\tests\mouseover.spec.ts:5:41
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>
